@@ -1,0 +1,30 @@
+{% block content %}
+<div class="col-lg-6">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div role="alert">
+      {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+    </div>
+    <div style=" text-align:center;
+    margin-top: 200px;
+     " >
+     <h1>Enter the Following Details</h1>
+        <form method="post">
+            <h2>Landlord deatils</h2>
+            <input type="name" name="name" required placeholder="Enter LandLord Name">
+            <input type="tel" name="number"  required placeholder="Enter Number">
+            <h2>Rental deatils</h2>
+            <input type="name" name="name" required placeholder="Enter rental Name">
+            <input type="tel" name="reantal number"  required placeholder="Enter Number">
+            <br>
+            <input type="submit" style="margin-top: 30px;" >
+        </form>
+    </div>
+
+
+{% endblock %}

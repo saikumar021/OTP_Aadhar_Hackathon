@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UIDAI</title>
+	<script src="https://kit.fontawesome.com/bbeea97aa1.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/index.css')}}"> 
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/media-queires.css')}}"> 
+	
+
+</head>
+<body>
+	<header id="header">
+			<nav class="sticky-nav">
+				<img class="logo" src="{{url_for('static', filename='logo.jpg')}}" >
+			<ul class="main-nav">
+				<li><a href="#header">HOME</a></li>                                
+				<li><a href="#services">SERVICES</a></li>
+				<li><a href="#about" class="">ABOUT</a></li>
+			</ul>
+		</nav>
+		<img class="back2" src="{{url_for('static', filename='back222.jpg')}}">
+<section class="top di">
+</section>
+</header>
+
+
+<section class="service-section" id="services">	
+	<h1 class="ab">SERVICES</h1>
+
+<div id="about">
+
+	<img class="img1" src="{{url_for('static', filename='back1.jpg')}}">
+	<br>
+	<a href="{{url_for('number')}}" class="ser-text">Update aadhar  address with the help of landlord<br></a>
+	 <!-- <a href="{{url_for('number')}}" class="ser-text">with the help of landlord</a> -->
+</div>
+</section>
+<section>
+<footer id="contact">
+	<div class="row">
+		<div class="col span_1_of_2">
+			<ul class="footer-nav">
+				<li><a href="hack.pdf" download="">About us</a></li>
+				<li><a href="">Help & support</a></li>
+
+		</div>
+			<div class="col span_1_of_2">
+			<ul class="social-links">
+				<li><a href="https://m.facebook.com/1751069621843604/" target="blank"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="https://instagram.com/aadhaar_official?utm_medium=copy_link" target="blank"><i class="fab fa-instagram"></i></a>
+				<li><a href="https://www.linkedin.com/authwall?trk=ripf&trkInfo=AQH3MEJzS5EVeAAAAXy1wp34DjuM2EAF5mSfP1TwgecNQLw9de1f857N2MFRS7wMcGs65M2xsTI8W8Hecu6iX1_THGOLPjNEY0vF5wEwvqK_gsEHQaWb2hU5FglSCt7lRx4ZTos=&originalReferer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fin.linkedin.com%2Fcompany%2Funique-identification-authority-of-india-uidai-" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+
+		</div>
+	</div>
+</footer>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+<script >$(document).ready(function() {
+
+   
+    $(".about-section").waypoint(function(direction) {
+        if(direction=="down") {
+            $("nav").addClass('sticky-nav');
+        }
+        else {
+            $("nav").removeClass('sticky-nav');
+        }
+    }); 
+
+     
+});</script>
+
+</body>
+</html>

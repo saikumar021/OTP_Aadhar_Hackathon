@@ -1,0 +1,22 @@
+<div style="text-align: center;
+margin-top: 200px; font-size: 20px;">
+    {% block content %}
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    {% for category, message in messages %}
+    <div role="alert">
+      {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+    <div>
+        <form method="post" >
+            <input type="one-time-code" name="otp" required>
+            <input type="submit">
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

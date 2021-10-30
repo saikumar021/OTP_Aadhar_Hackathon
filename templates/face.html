@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UIDAI</title>
+	<script src="https://kit.fontawesome.com/bbeea97aa1.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/face.css') }}"> 
+
+</head>
+<body>
+	<header>
+		<nav class="sticky-nav">
+			<img class="logo" src="{{url_for('static', filename='logo.png')}}">
+			<ul class=" main-nav">
+				<li><a href="#header">HOME</a></li>
+				<li><a href="#services">SERVICES</a></li>
+				<li><a href="#about">CONTACT US</a></li>
+			</ul>
+		</nav>
+		<img class="back2" src="{{url_for('static', filename='back222.jpg')}}">
+<section class="top di">
+</section>
+</header>
+<div class="button">
+<a href="" class="button1">DETAILS</a>
+</div>
+
+<section class="service-section" id="services">	
+	<h1 class="ab">SERVICES</h1>
+
+<div id="about">
+
+	<img class="img1" src="{{url_for('static', filename='back1.jpg')}}">
+	<br>
+	<a href="" class="ser-text">Face authentication<br></a>
+	 <a href="" class="ser-text">for easy check in's</a>
+</div>
+</section>
+<section>
+<footer id="contact">
+	<div class="row">
+		<div class="col span_1_of_2">
+			<ul class="footer-nav">
+				<li><a href="#about">About us</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#contact">Help & support</a></li>
+
+		</div>
+			<div class="col span_1_of_2">
+			<ul class="social-links">
+				<li><a href="" target="blank"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="" target="blank"><i class="fab fa-instagram"></i></a>
+				<li><a href="" target="blank"><i class="fab fa-linkedin-in"></i></a></li>
+
+		</div>
+	</div>
+</footer>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+<script >$(document).ready(function() {
+
+   
+    $(".about-section").waypoint(function(direction) {
+        if(direction=="down") {
+            $("nav").addClass('sticky-nav');
+        }
+        else {
+            $("nav").removeClass('sticky-nav');
+        }
+    }); 
+
+     
+});</script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+@media only screen and (max-width: 1200px){
+	html,body{
+    font-size: 8px;
+
+}
+.back2 {
+	width: auto;
+    height: 500px;
+}
+
+}
+@media only screen and (max-width: 480px){
+	html,body{
+		font-size: 5px;
+	}
+	
+}
